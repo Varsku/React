@@ -21,7 +21,7 @@
           this.state = {temperature: '', weather: '', icon: '', city: ''};
         }
         buttonPressed = e => {
-             fetch('https://api.openweathermap.org/data/2.5/weather?q='+ this.state.city + '&units=metric&appid=f764d056abd32026bf5fbdc27eebfd03')
+             fetch('https://api.openweathermap.org/data/2.5/weather?q='+ this.state.city + '&units=metric&appid=YOUR_API_KEY')
           .then((response) => response.json()) 
           .then((responseData) => { 
              console.log(responseData);
